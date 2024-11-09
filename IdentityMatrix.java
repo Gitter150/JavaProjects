@@ -11,7 +11,6 @@ class IdentityMatrix {
                  if(i==j){
                      iden[i][j]=1;
                  }
-                 else iden[i][j]=0;
              }
          }
          System.out.println("The identity matrix of order "+order+" is:\n");
