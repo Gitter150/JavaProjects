@@ -21,8 +21,12 @@ class Complex {
                         return conj;
                 }
 
+                double magnitude(){
+                        double mag = Math.sqrt(real*real + imag*imag);
+                        return mag;
+                }
                 double arg(){
-                        double angle = Math.sqrt(real*real + imag*imag);
+                        double angle = Math.atan(imag/real);
                         return Math.toRadians(angle);
                 }
 
@@ -45,8 +49,9 @@ class Complex {
                         
                         System.out.println("Enter the second complex number in the form (a+bi)");
                         s2 = input.nextLine();
-                        s1.trim();
-                        s2.trim();
+                        s1 = s1.trim();
+                        s2 = s2.trim();
+
                         s1 = s1.replace("\n","");
                         s2 = s2.replace("\n","");
                         while(s1.charAt(uptoPlus1)!='+'){
