@@ -57,12 +57,10 @@ class Complex {
                         }
                         String real1 = s1.substring(0,uptoPlus1);
                         String real2 = s2.substring(0,uptoPlus2);
-                        System.out.println("String upto plus sign = "+real1);
-                        System.out.println("String upto plus sign = "+real2);
+                        
                         String imag1 = s1.substring(uptoPlus1+1,s1.length()-1);
                         String imag2 = s2.substring(uptoPlus2+1,s2.length()-1);
-                        System.out.println("String after plus sign = "+imag1);
-                        System.out.println("String after plus sign = "+imag2);
+                       
                         r1 = Double.parseDouble(real1);
                         i1 = Double.parseDouble(imag1);
                         r2 = Double.parseDouble(real2);
